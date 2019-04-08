@@ -1,0 +1,27 @@
+#chart {
+    width: 600px;
+    /* height: 400px; */
+    background-color: #f8f8f8;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem;
+}
+
+.bar {
+    display: inline-block;
+    min-width: 10px;
+    background-color: #7ed26d;
+    margin-left: 1px;
+    flex: 1;
+}
+
+.cold {
+    background-color: #6daad2;
+    fill: #6daad2;
+}
+.hot {
+    background-color: #d26dc1;
+    fill: #d26dc1;
+}

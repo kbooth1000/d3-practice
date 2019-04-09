@@ -32,6 +32,7 @@ svg.selectAll( 'text')
 .enter()
 .append( 'text' )
 .text( d => d )
-.attr( 'x', (d,i) => i * (chartWidth/dataset.length) + ((chartWidth/dataset.length)/2)-10)
+.attr( 'x', (d,i) => i * (chartWidth/dataset.length) + ((chartWidth/dataset.length - barPadding)/2))
 .attr( 'y', d => chartHeight - d + 15)
 .attr( 'fill', '#fff')
+.attr( 'text-anchor', 'middle');
